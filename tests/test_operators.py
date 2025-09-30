@@ -144,7 +144,7 @@ def test_other(z, x, y) -> None:
     """
     Write a test that ensures some other property holds for your functions.
     """
-    assert mul(add(x, y), z) == mul(z, x) + mul(z, y)
+    assert_close(mul(add(x, y), z), mul(z, x) + mul(z, y))
 
 
 # ## Task 0.3  - Higher-order functions
